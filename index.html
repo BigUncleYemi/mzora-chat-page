@@ -12,7 +12,7 @@
   </head>
   <body>
     <main>
-      <section class="main-contact-list">
+      <section id="side" class="main-contact-list">
         <div class="main-contact-list_heading">
           <h2>All Message</h2>
           <button>
@@ -29,10 +29,10 @@
           <div class="main-contact-list_area-main">
             <!-- contact list item for loop starts -->
             <div class="main-contact-list_area-main-item">
-              <div id="online">
+              <div style="width: 40px;" id="online">
                 <img src="https://i.pravatar.cc/300" al="avatar" />
               </div>
-              <div>
+              <div style="width: 90%;">
                 <div>
                   <p>Name</p>
                   <p>3 days</p>
@@ -45,12 +45,13 @@
                 </p>
               </div>
             </div>
-
+            <!-- contact list item for loop ends-->
+            <!-- contact list item for loop starts -->
             <div class="main-contact-list_area-main-item">
-              <div id="online">
+              <div style="width: 40px;" id="online">
                 <img src="https://i.pravatar.cc/300" al="avatar" />
               </div>
-              <div>
+              <div style="width: 90%;">
                 <div>
                   <p>Name</p>
                   <p>3 days</p>
@@ -63,12 +64,32 @@
                 </p>
               </div>
             </div>
-
+            <!-- contact list item for loop ends-->
+            <!-- contact list item for loop starts -->
             <div class="main-contact-list_area-main-item">
-              <div id="online">
+              <div style="width: 40px;" id="online">
                 <img src="https://i.pravatar.cc/300" al="avatar" />
               </div>
-              <div>
+              <div style="width: 90%;">
+                <div>
+                  <p>Name</p>
+                  <p>3 days</p>
+                </div>
+                <p>
+                  Title
+                </p>
+                <p>
+                  Some truncated message body that I will decide the character limit later  
+                </p>
+              </div>
+            </div>
+            <!-- contact list item for loop ends-->
+            <!-- contact list item for loop starts -->
+            <div class="main-contact-list_area-main-item">
+              <div style="width: 40px;" id="online">
+                <img src="https://i.pravatar.cc/300" al="avatar" />
+              </div>
+              <div style="width: 90%;">
                 <div>
                   <p>Name</p>
                   <p>3 days</p>
@@ -85,9 +106,12 @@
           </div>
         </div>
       </section>
-      <section class="main-contact-message">
+      <section id="body" class="main-contact-message">
         <div class="main-contact-message_heading">
           <div class="main-contact-message_heading-user">
+            <button id="back">
+              <i class="fas fa-arrow-left"></i>
+            </button>
             <div id="online">
               <img src="https://i.pravatar.cc/300" al="avatar" />
             </div>
@@ -107,26 +131,28 @@
             <button>
               <i class="fas fa-file"></i>
             </button>
-            <button>
-              <i class="fas fa-ellipsis-v"></i>
-            </button>
           </div>
         </div>
         <div class="main-contact-message_body">
-          <div class="me">
-            <small>time</small> me
-          </div>
-          <div class="sender">
-            sender <small>time</small>
+          <div class="main-contact-message_body-content">
+            <div class="me">
+              <p>me</p>
+              <small>time</small> 
+            </div>
+            <div class="sender">
+              <p>sender</p>
+              <small>time</small>
+            </div>
           </div>
           <div class="main-contact-message_body-message-box">
             <button><i class="fas fa-paperclip"></i></button>
             <button><i class="fas fa-image"></i></button>
-            <textarea type="text"></textarea>
-            <button><i class="fas fa-paper-plane"></i></button>
+            <textarea type="text" id="messenger"></textarea>
+            <button id="send"><i class="fas fa-paper-plane"></i></button>
           </div>
         </div>
       </section>
     </main>
+    <script src="./index.js" ></script>
   </body>
 </html>
